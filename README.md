@@ -21,9 +21,9 @@ All JavaScript code can be included inline or linked externally.
 
 ---
 
-## 📌 Tasks Overview
+📌 Tasks Overview
 
-### ✅ Task 1 — `slugify(title)`
+✅ Task 1 — `slugify(title)`
 
 Converts a string into a URL-friendly slug by converting to lowercase and replacing spaces with hyphens.
 
