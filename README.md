@@ -23,7 +23,7 @@ All JavaScript code can be included inline or linked externally.
 
 📌 Tasks Overview
 
-✅ Task 1 — `slugify(title)`
+##✅ Task 1 — `slugify(title)`
 
 Converts a string into a URL-friendly slug by converting to lowercase and replacing spaces with hyphens.
 js
@@ -77,6 +77,7 @@ filterArray([12, 24, 8, 41, 76], 38); // [41, 76]
 String methods: toLowerCase(), replace()
 
 Array methods: concat(), slice()
+##
 
 Looping through arrays with for
 
