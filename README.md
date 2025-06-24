@@ -9,6 +9,9 @@ This project contains three beginner-friendly JavaScript tasks focused on string
 project/
 └── index.html
 
+yaml
+Копировать
+Редактировать
 
 All JavaScript code can be included inline or linked externally.
 
@@ -23,11 +26,50 @@ All JavaScript code can be included inline or linked externally.
 ---
 
 ## 📌 Tasks Overview
-
+```js
 Task 1 — `slugify(title)`
-
 Converts a string into a URL-friendly slug by converting to lowercase and replacing spaces with hyphens.
 
 function slugify(title) {
   return title.toLowerCase().replace(/\s+/g, "-");
 }
+Examples:
+slugify("Arrays for beginners"); // "arrays-for-beginners"
+slugify("How to become a JUNIOR developer in TWO WEEKS"); // "how-to-become-a-junior-developer-in-two-weeks"
+
+Task 2 — makeArray(firstArray, secondArray, maxLength)
+Merges two arrays and returns a new array truncated to maxLength if needed.
+
+function makeArray(firstArray, secondArray, maxLength) {
+  const twoArray = firstArray.concat(secondArray);
+  if (twoArray.length > maxLength) {
+    return twoArray.slice(0, maxLength);
+  }
+  return twoArray;
+}
+Examples:
+makeArray(["Mango", "Poly"], ["Ajax", "Chelsea"], 3); // ["Mango", "Poly", "Ajax"]
+makeArray(["Earth", "Jupiter"], ["Neptune", "Uranus", "Venus"], 0); // []
+
+Task 3 — filterArray(numbers, value)
+Returns a new array containing only the elements from numbers greater than value.
+
+function filterArray(numbers, value) {
+  let countNumber = [];
+  for (let i = 0; i < numbers.length; i++) {
+    if (numbers[i] > value) {
+      countNumber.push(numbers[i]);
+    }
+  }
+  return countNumber;
+}
+Examples:
+filterArray([1, 2, 3, 4, 5], 3); // [4, 5]
+filterArray([12, 24, 8, 41, 76], 38); // [41, 76]
+
+🧠 What You'll Practice
+String methods: toLowerCase(), replace()
+Array methods: concat(), slice()
+Looping through arrays with for
+Conditional filtering of arrays
+Writing reusable functions
