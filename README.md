@@ -26,8 +26,7 @@ All JavaScript code can be included inline or linked externally.
 ✅ Task 1 — `slugify(title)`
 
 Converts a string into a URL-friendly slug by converting to lowercase and replacing spaces with hyphens.
-
-```js
+js
 function slugify(title) {
   return title.toLowerCase().replace(/\s+/g, "-");
 }
